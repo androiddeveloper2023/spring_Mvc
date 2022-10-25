@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.google.android.material.card.MaterialCardView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:layout_goneMarginEnd="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="4dp"
+    app:strokeColor="@color/gray100"
+    app:strokeWidth="1dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="95dp"
+        android:layout_width="match_parent">
+
+    <TextView
+        android:layout_height="55dp"
+        android:layout_width="55dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="36sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="A"
+        android:gravity="center"
+        android:background="@drawable/shape_back_text_aval"
+        android:id="@+id/txtHarfAval"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@+id/txtHarfAval"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:text="Fardin Aghadadashi"
+        android:id="@+id/txtName"
+        app:layout_constraintStart_toEndOf="@+id/txtHarfAval"
+        android:fontFamily="@font/primary_bold"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:text="Android"
+        android:background="@drawable/shape_back_text"
+        android:id="@+id/txtCourse"
+        app:layout_constraintTop_toBottomOf="@+id/txtName"
+        android:paddingBottom="2dp"
+        android:paddingEnd="4dp"
+        android:paddingTop="2dp"
+        android:paddingStart="4dp"/>
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toTopOf="@+id/txtName"
+        android:id="@+id/imageView2"
+        app:srcCompat="@drawable/ic_score_gray_24dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:text="173"
+        android:id="@+id/txtScore"
+        android:fontFamily="@font/primary_bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
